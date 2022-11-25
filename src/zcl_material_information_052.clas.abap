@@ -24,7 +24,8 @@ CLASS zcl_material_information_052 IMPLEMENTATION.
         FROM i_product fields producttype
         WHERE product = @MATNR INTO CORRESPONDING FIELDS OF @MATERIAL .
 
-        MATERIAL_ART = MATERIAL-producttype.
+*        MATERIAL_ART = MATERIAL-producttype.
+        "test
     ENDMETHOD.
 
     METHOD if_oo_adt_classrun~main.
